@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# npm install husky --save-dev
+# npx husky install  # 初始化 .husky 目录
+# npx husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'
+
+npx --no-install commitlint --edit $1
